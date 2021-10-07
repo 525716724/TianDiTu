@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>天地图 竹山数据 带你看世界</title>
+    <script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=a2bdc223ee221c162b9b5541fe0b8062"></script>
+    <script>
+        var map;
+        var zoom = 12;
+        function onLoad() {
+            map = new T.Map('mapDiv');
+            map.centerAndZoom(new T.LngLat(116.40769, 39.89945), zoom);
+        }
+    </script>
+</head>
+<body onLoad="onLoad()">
+<div id="mapDiv" style="position:absolute;width:1080px; height:2240px"></div>
+</body>
+</html>
